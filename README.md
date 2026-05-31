@@ -109,31 +109,34 @@ python3 research-copilot/scripts/identify_gaps.py --query "deep learning" --year
 
 ```
 Trae-Skills/
-├── research-copilot/              # 科研论文助手
-│   ├── scripts/                   # Python 脚本
-│   │   ├── search_papers.py       # 多源文献检索
-│   │   ├── search_chinese.py      # 中文文献检索
-│   │   ├── analyze_trends.py      # 趋势分析
-│   │   ├── identify_gaps.py       # GAP 识别
-│   │   ├── check_similarity.py    # 相似度检测
-│   │   └── format_citations.py    # 引用格式化
-│   ├── SKILL.md                   # Skill 定义
+├── research-copilot/                   # 科研论文助手
+│   ├── scripts/                        # Python 脚本
+│   │   ├── search_papers.py            # 多源文献检索
+│   │   ├── search_chinese.py           # 中文文献检索
+│   │   ├── analyze_trends.py           # 趋势分析
+│   │   ├── identify_gaps.py            # GAP 识别
+│   │   ├── check_similarity.py         # 相似度检测
+│   │   └── format_citations.py         # 引用格式化
+│   ├── SKILL.md                        # Skill 定义
+│   ├── research-copilot.zip            # 打包好的skill
 │   └── README.md
 │
-├── mla-format-master/             # MLA 格式化工具
+├── mla-format-master/                  # MLA 格式化工具
 │   ├── src/
-│   │   └── index.js               # 核心实现
-│   ├── skill.md                   # Skill 定义
-│   ├── prompt.md                  # Prompt 模板
+│   │   └── index.js                    # 核心实现
+│   ├── skill.md                        # Skill 定义
+│   ├── prompt.md                       # Prompt 模板
+│   ├── mla-format-master.zip           # 打包好的skill
 │   └── README.md
 │
-├── carbon-footprint-auditor/      # 碳足迹审计员
+├── carbon-footprint-auditor/           # 碳足迹审计员
 │   ├── data/
-│   │   ├── emission_factors.json  # 排放因子库
-│   │   ├── achievements.json      # 成就系统配置
-│   │   ├── user_config.json       # 用户档案
-│   │   └── records.csv            # 消费记录
-│   └── SKILL.md                   # Skill 定义
+│   │   ├── emission_factors.json       # 排放因子库
+│   │   ├── achievements.json           # 成就系统配置
+│   │   ├── user_config.json            # 用户档案
+│   │   └── records.csv                 # 消费记录
+│   ├── carbon-footprint-auditor.zip    # 打包好的skill
+│   └── SKILL.md                        # Skill 定义
 │
 ├── .gitignore
 └── README.md

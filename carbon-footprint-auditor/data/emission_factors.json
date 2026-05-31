@@ -1,0 +1,433 @@
+{
+  "version": "2.0",
+  "last_updated": "2025-05",
+  "data_sources": [
+    "IPCC 2021 Guidelines for National Greenhouse Gas Inventories",
+    "中国生态环境部《企业温室气体排放核算方法与报告指南》",
+    "国家能源局《中国电力统计年鉴2024》",
+    "FAO Food Carbon Footprint Database",
+    "中国生命周期基础数据库(CLCD)"
+  ],
+  "notes": "所有排放因子均为全生命周期(LCA)数据，包含上游生产、运输和使用阶段",
+  "travel": {
+    "unit": "kgCO2_per_km",
+    "data_quality": "high",
+    "factors": {
+      "walk": {
+        "value": 0,
+        "confidence": "high",
+        "description": "步行",
+        "source": "IPCC"
+      },
+      "bike": {
+        "value": 0,
+        "confidence": "high",
+        "description": "骑行/自行车",
+        "source": "IPCC"
+      },
+      "ebike": {
+        "value": 0.006,
+        "confidence": "medium",
+        "description": "电动自行车",
+        "source": "CLCD"
+      },
+      "bus": {
+        "value": 0.089,
+        "confidence": "high",
+        "description": "公交车",
+        "source": "中国交通运输统计"
+      },
+      "subway": {
+        "value": 0.041,
+        "confidence": "high",
+        "description": "地铁",
+        "source": "中国交通运输统计"
+      },
+      "train": {
+        "value": 0.041,
+        "confidence": "high",
+        "description": "火车/高铁",
+        "source": "中国交通运输统计"
+      },
+      "car_gasoline": {
+        "value": 0.21,
+        "confidence": "high",
+        "description": "私家车-汽油",
+        "source": "IPCC+CLCD"
+      },
+      "car_diesel": {
+        "value": 0.25,
+        "confidence": "high",
+        "description": "私家车-柴油",
+        "source": "IPCC+CLCD"
+      },
+      "car_electric": {
+        "value": 0.053,
+        "confidence": "high",
+        "description": "私家车-电动",
+        "source": "CLCD"
+      },
+      "car_hybrid": {
+        "value": 0.12,
+        "confidence": "high",
+        "description": "私家车-混动",
+        "source": "CLCD"
+      },
+      "plane_short": {
+        "value": 0.255,
+        "confidence": "medium",
+        "description": "飞机-短途(<800km)",
+        "source": "Defra 2024"
+      },
+      "plane_medium": {
+        "value": 0.195,
+        "confidence": "medium",
+        "description": "飞机-中途(800-1600km)",
+        "source": "Defra 2024"
+      },
+      "plane_long": {
+        "value": 0.175,
+        "confidence": "medium",
+        "description": "飞机-长途(>1600km)",
+        "source": "Defra 2024"
+      },
+      "taxi": {
+        "value": 0.22,
+        "confidence": "high",
+        "description": "出租车",
+        "source": "中国交通运输统计"
+      },
+      "ride_hailing": {
+        "value": 0.23,
+        "confidence": "medium",
+        "description": "网约车",
+        "source": "估算值"
+      },
+      "motorcycle": {
+        "value": 0.12,
+        "confidence": "high",
+        "description": "摩托车",
+        "source": "IPCC"
+      }
+    }
+  },
+  "food": {
+    "unit": "kgCO2_per_kg",
+    "data_quality": "high",
+    "notes": "数据为全生命周期，包含农业生产、加工、运输、零售",
+    "factors": {
+      "beef": {
+        "value": 27.0,
+        "confidence": "high",
+        "description": "牛肉",
+        "source": "FAO"
+      },
+      "lamb": {
+        "value": 12.0,
+        "confidence": "high",
+        "description": "羊肉",
+        "source": "FAO"
+      },
+      "pork": {
+        "value": 7.3,
+        "confidence": "high",
+        "description": "猪肉",
+        "source": "FAO"
+      },
+      "chicken": {
+        "value": 6.9,
+        "confidence": "high",
+        "description": "鸡肉",
+        "source": "FAO"
+      },
+      "duck": {
+        "value": 7.1,
+        "confidence": "high",
+        "description": "鸭肉",
+        "source": "FAO"
+      },
+      "fish_freshwater": {
+        "value": 5.1,
+        "confidence": "medium",
+        "description": "淡水鱼",
+        "source": "FAO"
+      },
+      "fish_sea": {
+        "value": 6.2,
+        "confidence": "medium",
+        "description": "海鱼",
+        "source": "FAO"
+      },
+      "shrimp": {
+        "value": 12.0,
+        "confidence": "medium",
+        "description": "虾类",
+        "source": "FAO"
+      },
+      "egg": {
+        "value": 4.8,
+        "confidence": "high",
+        "description": "鸡蛋",
+        "source": "FAO"
+      },
+      "milk": {
+        "value": 1.2,
+        "confidence": "high",
+        "description": "牛奶(每升)",
+        "source": "FAO"
+      },
+      "cheese": {
+        "value": 13.5,
+        "confidence": "high",
+        "description": "奶酪",
+        "source": "FAO"
+      },
+      "tofu": {
+        "value": 1.8,
+        "confidence": "medium",
+        "description": "豆腐",
+        "source": "CLCD"
+      },
+      "rice": {
+        "value": 1.1,
+        "confidence": "high",
+        "description": "米饭/大米",
+        "source": "FAO"
+      },
+      "wheat": {
+        "value": 0.7,
+        "confidence": "high",
+        "description": "面食/小麦",
+        "source": "FAO"
+      },
+      "vegetable_leafy": {
+        "value": 0.4,
+        "confidence": "high",
+        "description": "叶菜类",
+        "source": "FAO"
+      },
+      "vegetable_root": {
+        "value": 0.5,
+        "confidence": "high",
+        "description": "根茎类蔬菜",
+        "source": "FAO"
+      },
+      "fruit": {
+        "value": 0.3,
+        "confidence": "medium",
+        "description": "水果",
+        "source": "FAO"
+      },
+      "potato": {
+        "value": 0.3,
+        "confidence": "high",
+        "description": "土豆",
+        "source": "FAO"
+      }
+    },
+    "cooking_coefficients": {
+      "home_cooking": {
+        "value": 1.0,
+        "description": "在家烹饪"
+      },
+      "takeout": {
+        "value": 1.3,
+        "description": "外卖(含包装+配送)"
+      },
+      "restaurant": {
+        "value": 1.2,
+        "description": "餐厅堂食"
+      }
+    },
+    "portion_estimates": {
+      "small": 0.15,
+      "medium": 0.25,
+      "large": 0.4,
+      "unit": "kg"
+    }
+  },
+  "housing": {
+    "electricity": {
+      "unit": "kgCO2_per_kWh",
+      "data_quality": "high",
+      "note": "2024年中国各区域电网排放因子",
+      "factors": {
+        "china_average": {
+          "value": 0.5839,
+          "confidence": "high",
+          "description": "中国电网平均",
+          "source": "国家能源局2024"
+        },
+        "north_china": {
+          "value": 0.6100,
+          "confidence": "high",
+          "description": "华北电网(北京/天津/河北/山西/山东)",
+          "source": "国家能源局2024"
+        },
+        "east_china": {
+          "value": 0.5600,
+          "confidence": "high",
+          "description": "华东电网(上海/江苏/浙江/安徽/福建)",
+          "source": "国家能源局2024"
+        },
+        "south_china": {
+          "value": 0.5200,
+          "confidence": "high",
+          "description": "南方电网(广东/广西/云南/贵州/海南)",
+          "source": "国家能源局2024"
+        },
+        "central_china": {
+          "value": 0.5800,
+          "confidence": "high",
+          "description": "华中电网(河南/湖北/湖南/江西/四川/重庆)",
+          "source": "国家能源局2024"
+        },
+        "northwest_china": {
+          "value": 0.6500,
+          "confidence": "high",
+          "description": "西北电网(陕西/甘肃/青海/宁夏/新疆)",
+          "source": "国家能源局2024"
+        },
+        "northeast_china": {
+          "value": 0.6200,
+          "confidence": "high",
+          "description": "东北电网(辽宁/吉林/黑龙江)",
+          "source": "国家能源局2024"
+        }
+      }
+    },
+    "gas": {
+      "unit": "kgCO2_per_m3",
+      "factors": {
+        "natural_gas": {
+          "value": 2.16,
+          "confidence": "high",
+          "description": "天然气",
+          "source": "IPCC"
+        },
+        "lpg": {
+          "value": 2.98,
+          "confidence": "high",
+          "description": "液化石油气",
+          "source": "IPCC"
+        },
+        "coal_gas": {
+          "value": 0.85,
+          "confidence": "medium",
+          "description": "煤气",
+          "source": "CLCD"
+        }
+      }
+    },
+    "water": {
+      "unit": "kgCO2_per_ton",
+      "factors": {
+        "tap_water": {
+          "value": 0.91,
+          "confidence": "medium",
+          "description": "自来水",
+          "source": "CLCD"
+        }
+      }
+    }
+  },
+  "shopping": {
+    "unit": "kgCO2_per_item",
+    "data_quality": "medium",
+    "clothing": {
+      "cotton_tshirt": {
+        "value": 7.0,
+        "confidence": "medium",
+        "description": "棉质T恤",
+        "breakdown": "种植2kg+纺织3kg+制造1.5kg+运输0.5kg"
+      },
+      "cotton_jeans": {
+        "value": 15.0,
+        "confidence": "medium",
+        "description": "牛仔裤"
+      },
+      "synthetic_shirt": {
+        "value": 15.0,
+        "confidence": "medium",
+        "description": "化纤衬衫"
+      },
+      "wool_sweater": {
+        "value": 25.0,
+        "confidence": "medium",
+        "description": "羊毛衫"
+      },
+      "leather_shoes": {
+        "value": 30.0,
+        "confidence": "medium",
+        "description": "皮鞋"
+      }
+    },
+    "electronics": {
+      "smartphone": {
+        "value": 70.0,
+        "confidence": "medium",
+        "description": "智能手机",
+        "breakdown": "制造60kg+使用10kg"
+      },
+      "laptop": {
+        "value": 300.0,
+        "confidence": "medium",
+        "description": "笔记本电脑",
+        "breakdown": "制造250kg+使用50kg"
+      },
+      "tablet": {
+        "value": 150.0,
+        "confidence": "medium",
+        "description": "平板电脑"
+      },
+      "tv_55inch": {
+        "value": 350.0,
+        "confidence": "medium",
+        "description": "55寸电视"
+      },
+      "refrigerator": {
+        "value": 400.0,
+        "confidence": "medium",
+        "description": "冰箱"
+      },
+      "washing_machine": {
+        "value": 250.0,
+        "confidence": "medium",
+        "description": "洗衣机"
+      },
+      "air_conditioner": {
+        "value": 300.0,
+        "confidence": "medium",
+        "description": "空调"
+      }
+    },
+    "logistics": {
+      "unit": "kgCO2_per_package",
+      "factors": {
+        "same_city": {
+          "value": 0.5,
+          "confidence": "medium",
+          "description": "同城快递"
+        },
+        "domestic": {
+          "value": 1.5,
+          "confidence": "medium",
+          "description": "国内快递"
+        },
+        "international": {
+          "value": 15.0,
+          "confidence": "medium",
+          "description": "国际快递"
+        }
+      }
+    }
+  },
+  "baseline": {
+    "description": "中国人均碳排放基准数据(2023年)",
+    "unit": "kgCO2_per_person_per_year",
+    "total": 7100,
+    "monthly_average": 592,
+    "daily_average": 19.5,
+    "source": "中国统计年鉴/IEA"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "mla-format-master",
+  "version": "1.0.0",
+  "description": "MLA Format Master - Academic paper formatting tool based on MLA Handbook 9th Edition",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "MLA",
+    "academic",
+    "formatting",
+    "citation",
+    "works-cited",
+    "paper-format"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "docx": "^8.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "version": "2.0",
+  "levels": {
+    "description": "根据累计减碳值(kgCO₂)解锁等级",
+    "ranks": [
+      {
+        "level": 1,
+        "title": "碳足迹新手",
+        "icon": "🌱",
+        "min_reduction": 0,
+        "max_reduction": 50,
+        "description": "刚开始关注碳排放"
+      },
+      {
+        "level": 2,
+        "title": "环保学徒",
+        "icon": "🌿",
+        "min_reduction": 50,
+        "max_reduction": 200,
+        "description": "已养成基础环保习惯"
+      },
+      {
+        "level": 3,
+        "title": "绿色践行者",
+        "icon": "🍃",
+        "min_reduction": 200,
+        "max_reduction": 500,
+        "description": "积极参与低碳生活"
+      },
+      {
+        "level": 4,
+        "title": "低碳达人",
+        "icon": "♻️",
+        "min_reduction": 500,
+        "max_reduction": 1000,
+        "description": "减碳成效显著"
+      },
+      {
+        "level": 5,
+        "title": "环保先锋",
+        "icon": "🌍",
+        "min_reduction": 1000,
+        "max_reduction": 2000,
+        "description": "引领绿色生活方式"
+      },
+      {
+        "level": 6,
+        "title": "碳中和卫士",
+        "icon": "🏆",
+        "min_reduction": 2000,
+        "max_reduction": 5000,
+        "description": "为碳中和目标贡献力量"
+      },
+      {
+        "level": 7,
+        "title": "地球守护者",
+        "icon": "🌎",
+        "min_reduction": 5000,
+        "max_reduction": 10000,
+        "description": "卓越的环保成就"
+      },
+      {
+        "level": 8,
+        "title": "碳减排大师",
+        "icon": "👑",
+        "min_reduction": 10000,
+        "max_reduction": null,
+        "description": "传奇级环保领袖"
+      }
+    ]
+  },
+  "achievements": {
+    "description": "成就系统 - 共30个成就徽章，达成严苛条件解锁",
+    "total_count": 30,
+    "categories": {
+      "daily_streak": {
+        "name": "坚持系列",
+        "description": "连续记录天数达成",
+        "items": [
+          {
+            "id": "a_001",
+            "name": "初识之种",
+            "icon": "🌰",
+            "description": "连续记录7天，种子开始萌芽",
+            "unlock_condition": "连续记录7天",
+            "difficulty": "简单"
+          },
+          {
+            "id": "a_002",
+            "name": "晨露之叶",
+            "icon": "🍃",
+            "description": "连续记录30天，叶片承接第一滴晨露",
+            "unlock_condition": "连续记录30天",
+            "difficulty": "中等"
+          },
+          {
+            "id": "a_003",
+            "name": "坚韧之枝",
+            "icon": "🌿",
+            "description": "连续记录90天，枝干在风雨中坚韧成长",
+            "unlock_condition": "连续记录90天",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_004",
+            "name": "四季之树",
+            "icon": "🌳",
+            "description": "连续记录365天，历经四季依然挺立",
+            "unlock_condition": "连续记录365天",
+            "difficulty": "极难"
+          },
+          {
+            "id": "a_005",
+            "name": "时光年轮",
+            "icon": "🪵",
+            "description": "连续记录1000天，每一圈年轮都是坚持的见证",
+            "unlock_condition": "连续记录1000天",
+            "difficulty": "传说"
+          }
+        ]
+      },
+      "carbon_reduction": {
+        "name": "减碳里程碑",
+        "description": "累计减碳量达成",
+        "items": [
+          {
+            "id": "a_006",
+            "name": "第一抹绿",
+            "icon": "💚",
+            "description": "累计减碳达到100kg，绿色生活初现成效",
+            "unlock_condition": "累计减碳100kg",
+            "difficulty": "简单"
+          },
+          {
+            "id": "a_007",
+            "name": "半吨勋章",
+            "icon": "🥉",
+            "description": "累计减碳达到500kg，相当于少开2000公里车",
+            "unlock_condition": "累计减碳500kg",
+            "difficulty": "中等"
+          },
+          {
+            "id": "a_008",
+            "name": "吨级徽章",
+            "icon": "🥈",
+            "description": "累计减碳达到1000kg，一吨碳排放被你阻止",
+            "unlock_condition": "累计减碳1000kg",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_009",
+            "name": "五吨王冠",
+            "icon": "🥇",
+            "description": "累计减碳达到5000kg，你的影响力如王冠般耀眼",
+            "unlock_condition": "累计减碳5000kg",
+            "difficulty": "极难"
+          },
+          {
+            "id": "a_010",
+            "name": "十吨传奇",
+            "icon": "💎",
+            "description": "累计减碳达到10000kg，十年树木，你的贡献堪比一片小森林",
+            "unlock_condition": "累计减碳10000kg",
+            "difficulty": "传说"
+          }
+        ]
+      },
+      "travel_master": {
+        "name": "出行大师",
+        "description": "绿色出行里程/次数达成",
+        "items": [
+          {
+            "id": "a_011",
+            "name": "步行者印记",
+            "icon": "👣",
+            "description": "步行累计100公里，每一步都算数",
+            "unlock_condition": "步行累计100km",
+            "difficulty": "简单"
+          },
+          {
+            "id": "a_012",
+            "name": "骑行者之翼",
+            "icon": "🚲",
+            "description": "骑行累计500公里，风在耳边呼啸",
+            "unlock_condition": "骑行累计500km",
+            "difficulty": "中等"
+          },
+          {
+            "id": "a_013",
+            "name": "公交达人卡",
+            "icon": "🚌",
+            "description": "公交/地铁出行累计100次，城市的脉络由你丈量",
+            "unlock_condition": "公交/地铁出行100次",
+            "difficulty": "中等"
+          },
+          {
+            "id": "a_014",
+            "name": "无车日先锋",
+            "icon": "🚫🚗",
+            "description": "连续30天不使用私家车，一个月的无车生活",
+            "unlock_condition": "连续30天无私家车记录",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_015",
+            "name": "环球行者",
+            "icon": "🌐",
+            "description": "绿色出行总里程达到地球周长的1/400（100km）",
+            "unlock_condition": "绿色出行累计40000km",
+            "difficulty": "传说"
+          }
+        ]
+      },
+      "diet_master": {
+        "name": "饮食革新者",
+        "description": "低碳饮食挑战达成",
+        "items": [
+          {
+            "id": "a_016",
+            "name": "素食初体验",
+            "icon": "🥗",
+            "description": "完成7天素食挑战，开启饮食新篇章",
+            "unlock_condition": "累计7天素食记录",
+            "difficulty": "简单"
+          },
+          {
+            "id": "a_017",
+            "name": "红肉戒断者",
+            "icon": "🥩❌",
+            "description": "连续30天不食用牛肉/羊肉，为地球减负",
+            "unlock_condition": "连续30天无红肉记录",
+            "difficulty": "中等"
+          },
+          {
+            "id": "a_018",
+            "name": "本地美食家",
+            "icon": "🏪",
+            "description": "连续60天只食用本地应季食材，减少食物里程",
+            "unlock_condition": "连续60天选择本地食材",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_019",
+            "name": "零浪费厨师",
+            "icon": "♻️🍽️",
+            "description": "连续90天无外卖、无浪费，每顿饭都物尽其用",
+            "unlock_condition": "连续90天在家烹饪且无浪费",
+            "difficulty": "极难"
+          },
+          {
+            "id": "a_020",
+            "name": "植物守护者",
+            "icon": "🌱🛡️",
+            "description": "全年素食（365天），成为地球的植物守护者",
+            "unlock_condition": "累计365天素食",
+            "difficulty": "传说"
+          }
+        ]
+      },
+      "energy_master": {
+        "name": "节能专家",
+        "description": "能源节约挑战达成",
+        "items": [
+          {
+            "id": "a_021",
+            "name": "关灯侠",
+            "icon": "💡",
+            "description": "单月用电量比平均水平低20%",
+            "unlock_condition": "单月用电低于平均20%",
+            "difficulty": "简单"
+          },
+          {
+            "id": "a_022",
+            "name": "26度卫士",
+            "icon": "❄️",
+            "description": "整个夏季空调设定不低于26度",
+            "unlock_condition": "夏季3个月空调≥26度",
+            "difficulty": "中等"
+          },
+          {
+            "id": "a_023",
+            "name": "断舍离大师",
+            "icon": "🔌",
+            "description": "连续6个月每月用电低于平均30%",
+            "unlock_condition": "连续6个月节电30%",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_024",
+            "name": "零碳居所",
+            "icon": "🏠☀️",
+            "description": "全年使用可再生能源或实现用电中和",
+            "unlock_condition": "全年使用绿电或碳中和",
+            "difficulty": "极难"
+          },
+          {
+            "id": "a_025",
+            "name": "能源独立者",
+            "icon": "🔋",
+            "description": "全年用电量低于全国人均50%",
+            "unlock_condition": "年用电低于人均50%",
+            "difficulty": "传说"
+          }
+        ]
+      },
+      "special_challenge": {
+        "name": "特殊挑战",
+        "description": "高难度综合挑战",
+        "items": [
+          {
+            "id": "a_026",
+            "name": "完美周",
+            "icon": "⭐",
+            "description": "连续7天，每天的碳排放都低于10kg",
+            "unlock_condition": "连续7天日排放<10kg",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_027",
+            "name": "碳中和日",
+            "icon": "⚖️",
+            "description": "单日净碳排放为零（通过减碳行为抵消当日排放）",
+            "unlock_condition": "单日净排放≤0",
+            "difficulty": "极难"
+          },
+          {
+            "id": "a_028",
+            "name": "全勤标兵",
+            "icon": "📋",
+            "description": "一个月内记录所有类别的碳排放（出行、饮食、居住、购物）",
+            "unlock_condition": "单月4类记录均≥10条",
+            "difficulty": "困难"
+          },
+          {
+            "id": "a_029",
+            "name": "持续改善者",
+            "icon": "📈",
+            "description": "连续6个月，每月碳排放都比上月降低",
+            "unlock_condition": "连续6个月碳排放递减",
+            "difficulty": "极难"
+          },
+          {
+            "id": "a_030",
+            "name": "碳减排之神",
+            "icon": "🏆✨",
+            "description": "解锁其他29个成就，成为真正的碳减排之神",
+            "unlock_condition": "解锁其他29个成就",
+            "difficulty": "终极传说"
+          }
+        ]
+      }
+    }
+  },
+  "point_rules": {
+    "description": "积分仅用于展示成就进度，不可兑换",
+    "carbon_reduction": {
+      "description": "减碳积分",
+      "rate": 10,
+      "unit": "points_per_kgCO2",
+      "note": "每减少1kgCO₂排放获得10积分"
+    },
+    "daily_record_bonus": {
+      "description": "每日记录奖励",
+      "points": 5,
+      "note": "每天完成至少一条记录"
+    },
+    "weekly_goal_bonus": {
+      "description": "周目标达成奖励",
+      "points": 50,
+      "note": "周减碳量达到目标"
+    },
+    "monthly_goal_bonus": {
+      "description": "月目标达成奖励",
+      "points": 200,
+      "note": "月减碳量达到目标"
+    }
+  }
+}

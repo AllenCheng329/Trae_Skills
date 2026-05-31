@@ -1,0 +1,1 @@
+record_id,user_id,date,category,subcategory,transport_mode,distance_km,passengers,meal_type,food_items,dining_mode,energy_type,usage_value,unit,product_category,quantity,packaging,carbon_emission_kg,notes,created_at

@@ -1,0 +1,35 @@
+{
+  "user_id": "",
+  "created_at": "",
+  "household": {
+    "size": 1,
+    "members": []
+  },
+  "location": {
+    "province": "",
+    "city": "",
+    "grid_region": "china_average"
+  },
+  "vehicle": {
+    "has_car": false,
+    "fuel_type": "",
+    "average_daily_km": 0
+  },
+  "goals": {
+    "monthly_carbon_kg": 150,
+    "yearly_carbon_kg": 1800
+  },
+  "preferences": {
+    "report_frequency": "weekly",
+    "reminder_enabled": true,
+    "reminder_time": "20:00"
+  },
+  "statistics": {
+    "total_records": 0,
+    "total_carbon_kg": 0,
+    "total_points": 0,
+    "consecutive_days": 0,
+    "best_day_carbon_kg": null,
+    "worst_day_carbon_kg": null
+  }
+}
